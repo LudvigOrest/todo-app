@@ -18,14 +18,34 @@ body {
     margin-top: 20px;
 }
 
+#create-todo-container {
+    width: 200px;
+    height: fit-content;
+    background-color: rgb(194, 194, 194);
+    display: flex;
+    flex-direction: column;
+}
+
+#create-todo-container > h3 {
+    text-align: center;
+}
+
+#create-todo-container > input {
+    width: 90%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
 #create-new-todo-button {
     width: 120px;
     height: 50px;
     padding: 0px;
     font-weight: bold;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
-.todo-container {
+#todo-container {
     background-color:rgb(194, 194, 194);
     display: flex;
     flex-direction: column;
@@ -87,10 +107,18 @@ body {
 .finish-card {
 }
 
-.finished-list {
+#finished-list {
     background-color: rgba(0, 128, 0, 0.162);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 600px;
 }
 
 .untargetable {
     display: none;
+}
+
+.aa {
+    background-color: red;
 }

@@ -10,9 +10,14 @@
 
         <container id="main-content">
 
-            <button id="create-new-todo-button">Skapa ny todo</button>
+            <div id="create-todo-container">
+                <h3>New todo</h3>
+                <input id="input-todo-title" type="text" placeholder="Title">
+                <input id="input-todo-description" type="text" placeholder="Description"> 
+                <button id="create-new-todo-button">Push new todo</button>
+            </div>
 
-            <div class="todo-container">
+            <div id="todo-container">
                 <h2 class="todo-list-header">Ofärdiga</h2>
 
                 <div class="todo-card">
@@ -29,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="todo-container finished-list">
+            <div id="finished-list">
                 <h2 class="todo-list-header">Färdiga</h2>
 
                 <div class="todo-card">
