@@ -15,14 +15,16 @@ pushTodoBtn.addEventListener("click", (event) => {
     let todoDesc = document.getElementById("input-todo-description");
     let today = new Date().toLocaleDateString();
 
-    arrayOfTodo.push(new Todo(todoName.value, todoDesc.value, today, false, ""));
-    console.log(arrayOfTodo);
+    if (todoName.value != "") {
+        arrayOfTodo.push(new Todo(todoName.value, todoDesc.value, today, false, ""));
+        console.log(arrayOfTodo);
 
-    let i = arrayOfTodo.length-1;
-    createTodoCard(arrayOfTodo[i].todoName, arrayOfTodo[i].todoDescription, i);
+        let i = arrayOfTodo.length-1;
+        createTodoCard(arrayOfTodo[i].todoName, arrayOfTodo[i].todoDescription, i);
 
-    todoName.value = " ";
-    todoDesc.value = " ";
+        todoName.value = "";
+        todoDesc.value = "";
+    }
 })
 
 
