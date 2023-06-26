@@ -4,6 +4,47 @@
         <script src="main.js" defer></script>
     </head>
     <body>
+        <div id="header">
+        <h1>Todo-app</h1>
+        </div>
 
+        <container id="main-content">
+
+            <button id="create-new-todo-button">Skapa ny todo</button>
+
+            <div class="todo-container">
+                <h2 class="todo-list-header">Ofärdiga</h2>
+
+                <div class="todo-card">
+                    <div class="top-row">
+                        <button class="card-button remove-card">X</button>
+                        <h3 class="todo-header">Klappa hunden</h3>
+                        <button class="card-button finish-card">🗸</button>
+                    </div>
+                    <p class="todo-paragraph">jag ska klappa min hund</p>
+                    <div class="dates">
+                        <p class="todo-creation-date">created: 2023-06-26</p>
+                        <p class="todo-finished-date">finished: xxx-xx-xx</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo-container finished-list">
+                <h2 class="todo-list-header">Färdiga</h2>
+
+                <div class="todo-card">
+                    <div class="top-row">
+                        <button class="card-button remove-card">X</button>
+                        <h3 class="todo-header">Mata hunden</h3>
+                        <button class="card-button finish-card untargetable">🗸</button>
+                    </div>
+                    <p class="todo-paragraph">jag ska mata hunden med mat så att den kan äta och bli mätt</p>
+                    <div class="dates">
+                        <p class="todo-creation-date">created: 2023-06-26</p>
+                        <p class="todo-finished-date">finished: 2023-06-30</p>
+                    </div>
+                </div>
+            </div>
+        </container>
     </body>
 </html>

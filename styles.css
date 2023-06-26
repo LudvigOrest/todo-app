@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(207, 207, 207);
+    font-family: sans-serif;
+}
+
+#header {
+    display: flex;
+    background-color:rgba(100, 148, 237, 0.486);
+    margin: 0px;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+}
+
+#main-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#create-new-todo-button {
+    width: 120px;
+    height: 50px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.todo-container {
+    background-color:rgb(194, 194, 194);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 600px;
+}
+
+.todo-list-header {
+    text-align: center;
+}
+
+.todo-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 211, 211);
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.todo-header {
+    margin: 0px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    color:rgb(194, 194, 194);
+}
+
+.todo-paragraph {
+    margin-top: 15px;
+    font-style: italic;
+    align-self: center;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.dates {
+    margin-top: 10px;
+    align-self: center;
+    display:flex;
+    gap: 0px;
+    flex-direction: column;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    background-color: rgb(95, 95, 95);
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.card-button {
+    width: 30px;
+    height:20px;
+    text-align: center;
+}
+
+.finish-card {
+}
+
+.finished-list {
+    background-color: rgba(0, 128, 0, 0.162);
+}
+
+.untargetable {
+    display: none;
+}
